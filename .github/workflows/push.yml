@@ -3,9 +3,6 @@ name: CI/CD Pipeline - Node.js App
 on:
   push:
     branches: [main]
-
-env:
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
