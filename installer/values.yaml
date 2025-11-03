@@ -1,0 +1,4 @@
+deployment:
+  replicas: 1
+  image: superm4n/nodejs-app
+  tag: latest
