@@ -12,6 +12,8 @@ env:
   REGISTRY: docker.io
   DEPLOYMENT_NAME: nodejs-app
   NAMESPACE: nodejs
+  RELEASE_NAME: nodejs-app
+  CHART_PATH: installer
 
 jobs:
   build-and-deploy:
