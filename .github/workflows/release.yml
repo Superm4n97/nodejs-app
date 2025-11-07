@@ -81,7 +81,7 @@ jobs:
         env:
           IMAGE_TAG: ${{ steps.vars.outputs.version }}
         run: |
-          helm upgrade --install $RELEASE_NAME $CHART_PATH \
+          helm upgrade -i $RELEASE_NAME $CHART_PATH \
           --namespace $NAMESPACE \
           --set deployment.image=${{ secrets.DOCKER_USERNAME }}/${IMAGE_NAME} \
           --set deployment.tag=${IMAGE_TAG}
